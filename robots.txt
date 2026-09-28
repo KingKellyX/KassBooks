@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kassbooks.vercel.app/sitemap.xml
