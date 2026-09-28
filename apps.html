@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><title>Apps – KASS Books</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+<header class="top"><div class="wrap"><a class="brand" href="index.html"><span class="mark">KB</span>KASS Books</a><nav><a href="index.html" >Home</a><a href="apps.html" aria-current="page">Apps</a></nav></div></header>
+<main><section><div class="wrap">
+<h1 style="font-size:clamp(2rem,6vw,3rem);margin-bottom:10px">Choose your app</h1>
+<p class="lead">One app for each programme at KASS. Tap an app to open it.</p>
+<div class="list">
+<a class="app" href="science.html"><span class="ico">Sc</span><div><h3>Science Books</h3><p>Books for General Science students</p></div><span class="tag live">Available</span></a>
+<button class="app" data-name="G Arts Books" data-ico="GA"><span class="ico">GA</span><div><h3>G Arts Books</h3><p>Books for General Arts students</p></div><span class="tag soon">Coming soon</span></button>
+<button class="app" data-name="Home Econs Books" data-ico="HE"><span class="ico">HE</span><div><h3>Home Econs Books</h3><p>Books for Home Economics students</p></div><span class="tag soon">Coming soon</span></button>
+<button class="app" data-name="Visual Arts Books" data-ico="VA"><span class="ico">VA</span><div><h3>Visual Arts Books</h3><p>Books for Visual Arts students</p></div><span class="tag soon">Coming soon</span></button>
+<button class="app" data-name="Business Books" data-ico="Bs"><span class="ico">Bs</span><div><h3>Business Books</h3><p>Books for Business students</p></div><span class="tag soon">Coming soon</span></button>
+</div></div></section></main>
+<dialog id="soon"><span class="ico" id="d-ico"></span><h3 id="d-name"></h3><p>This app is coming soon. Please check back later.</p><button class="btn" id="d-close">Okay</button></dialog>
+<footer><div class="wrap"><span>KASS Books · Anglican Senior High School, Kumasi</span><span>Made by <a href="https://wa.me/+233500836470?text=Hello">King Kelly</a></span></div></footer>
+<script>
+var d=document.getElementById("soon");
+document.querySelectorAll("button.app").forEach(function(b){b.addEventListener("click",function(){document.getElementById("d-name").textContent=b.dataset.name+" – coming soon";document.getElementById("d-ico").textContent=b.dataset.ico;d.showModal()})});
+document.getElementById("d-close").onclick=function(){d.close()};
+d.addEventListener("click",function(e){if(e.target===d)d.close()});
+</script></body></html>
