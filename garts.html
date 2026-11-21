@@ -1,19 +1,35 @@
-<!doctype html><html lang="en"><head><title>G Arts Books – Download – KASS Books</title><meta name="description" content="Download the KASS Books G Arts Books app for Android. Free study app for KASS General Arts students."><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><link rel="icon" type="image/png" href="favicon.png"></head><body>
+<!doctype html><html lang="en"><head><title>G Arts Books – Download – KASS Books</title><meta name="description" content="Download the KASS Books General Books app for Android. Free study app for KASS General Arts students."><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><link rel="icon" type="image/png" href="favicon.png">
+<style>
+.stat-row{display:flex;gap:22px;flex-wrap:wrap;margin:14px 0 0;color:#cbbce6}
+.stat-row b{color:#fff;font-size:1.15rem}
+.stars{color:#e0a800;letter-spacing:2px;white-space:nowrap}
+.rv-form{display:grid;gap:12px;max-width:560px;margin:18px 0 32px}
+.rv-form input,.rv-form textarea{font:inherit;padding:12px;border:1px solid #cfc6e0;border-radius:10px;width:100%;box-sizing:border-box}
+.pick{display:flex;gap:6px;font-size:2rem;line-height:1;cursor:pointer;user-select:none}
+.pick span{color:#d3cbe3}
+.pick span.on{color:#e0a800}
+.rv-msg{font-size:.95rem;min-height:1.2em}
+.rv-item{border:1px solid #e3dcef;border-radius:12px;padding:14px 16px;margin-bottom:12px;max-width:560px}
+.rv-item .who{font-weight:800}
+.rv-item .when{font-size:.85rem;color:#7a6f92;margin-left:8px}
+.rv-item p{margin:8px 0 0;word-wrap:break-word}
+</style></head><body>
 <header class="top"><div class="wrap"><a class="brand" href="index.html"><span class="mark">KB</span>KASS Books</a><nav><a href="index.html" >Home</a><a href="apps.html" aria-current="page">Apps</a></nav></div></header>
 <main>
 <div class="hero" style="padding:48px 0 56px"><div class="wrap">
 <a class="crumb" href="apps.html">‹ All apps</a>
-<div style="display:flex;gap:18px;align-items:center;margin-bottom:18px"><span class="ico" style="background:var(--gold);color:var(--deep);width:72px;height:72px;font-size:1.6rem">GA</span><h1 style="font-size:clamp(2rem,6vw,3.2rem)">G Arts Books</h1></div>
+<div style="display:flex;gap:18px;align-items:center;margin-bottom:18px"><span class="ico" style="background:var(--gold);color:var(--deep);width:72px;height:72px;font-size:1.6rem">Sc</span><h1 style="font-size:clamp(2rem,6vw,3.2rem)">Science Books</h1></div>
 <p style="margin-top:0">Read your General Arts class books on your tablet. Free for KASS students.</p>
-<a class="btn" href="https://www.dropbox.com/scl/fi/yq5t89xauib1yxwy53xzj/G-Arts-Books_1.0.apk?rlkey=0qdy1ghstkje8xmln5mr3lf49&st=qi2xy4sn&dl=1" download>Download for Android</a>
+<a class="btn" id="dlBtn" href="https://www.dropbox.com/scl/fi/a20f4yxisqvx6rp9qbqi0/Science-Books_1.0.apk?rlkey=24fc3nnzv0fg36hikmvat6781&st=l57knaps&dl=1" download>Download for Android</a>
 <div class="facts" style="color:#cbbce6;margin:18px 0 0"><span><b style="color:#fff">Version</b> 1.5</span><span><b style="color:#fff">Works on</b> Android tablets</span></div>
+<div class="stat-row"><span><b id="dlCount">60</b> downloads</span><span><b id="avgStars" class="stars" style="color:#e0a800">–</b> <span id="avgText">No reviews yet</span></span></div>
 </div></div>
 <section><div class="wrap">
 <h2>What you get</h2>
 <ul class="tick" style="margin-bottom:44px">
 <li>All your General Arts class books in one place</li>
 <li>Read on your tablet, even with no data</li>
-<li>Updates come to you when new books and/or features are added</li>
+<li>Updates come to you when new books and/or new features are added</li>
 </ul>
 <h2>How to install</h2>
 <p class="lead">The file is not from the Play Store, so your tablet will ask you to allow it. This is normal.</p>
@@ -23,7 +39,107 @@
 <li><h3>Install</h3><p>Tap Install, then Open. Your books are ready.</p></li>
 </ol>
 </div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<h2>Reviews and comments</h2>
+<p class="lead">Used the app? Tell us what you think.</p>
+<div class="rv-form">
+<div class="pick" id="pick" aria-label="Choose stars"><span data-v="1">★</span><span data-v="2">★</span><span data-v="3">★</span><span data-v="4">★</span><span data-v="5">★</span></div>
+<input id="rvName" type="text" maxlength="30" placeholder="Your name">
+<textarea id="rvText" rows="4" maxlength="300" placeholder="Write your comment (max 300 letters)"></textarea>
+<button class="btn" id="rvSend" type="button">Send review</button>
+<div class="rv-msg" id="rvMsg"></div>
+</div>
+<div id="rvList"><p>Loading reviews...</p></div>
+</div></section>
+
 <section style="padding-top:0"><div class="wrap"><div class="panel"><div><h2>Not a General Arts student?</h2><p>See the app for your programme.</p></div><a class="btn" href="apps.html">Back to app list</a></div></div></section>
 </main>
-<footer><div class="wrap"><span>KASS Books · Anglican Senior High School, Kumasi</span><span>Made by <a href="https://wa.me/@King_KellyX?text=Hello">King Kelly</a></span></div></footer></body></html>
-  
+<footer><div class="wrap"><span>KASS Books · Anglican Senior High School, Kumasi</span><span>Made by <a href="https://wa.me/@King_KellyX?text=Hello">King Kelly</a></span></div></footer>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getFirestore, doc, getDoc, setDoc, increment, collection, addDoc, getDocs, query, orderBy, limit, serverTimestamp }
+  from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAdGpSysRCcKeXkThPVpD84O027_RfEo6w",
+  authDomain: "kassbooks-f456b.firebaseapp.com",
+  projectId: "kassbooks-f456b",
+  storageBucket: "kassbooks-f456b.firebasestorage.app",
+  messagingSenderId: "42937800609",
+  appId: "1:42937800609:web:631139cdc750c85c0e1de0"
+};
+const db = getFirestore(initializeApp(firebaseConfig));
+
+const APP_ID = "science";
+const START_COUNT = 60; // downloads you already had before this counter
+
+const $ = id => document.getElementById(id);
+const statsRef = doc(db, "stats", APP_ID);
+let counted = 0;
+
+// ---------- Downloads ----------
+function showDownloads(){ $("dlCount").textContent = (START_COUNT + counted).toLocaleString(); }
+showDownloads();
+getDoc(statsRef).then(s => { counted = s.exists() ? (s.data().downloads || 0) : 0; showDownloads(); }).catch(()=>{});
+
+$("dlBtn").addEventListener("click", () => {
+  setDoc(statsRef, { downloads: increment(1) }, { merge: true })
+    .then(() => { counted += 1; showDownloads(); })
+    .catch(()=>{});
+});
+
+// ---------- Reviews ----------
+let stars = 0;
+const pick = $("pick");
+function paint(n){ [...pick.children].forEach(s => s.classList.toggle("on", +s.dataset.v <= n)); }
+pick.addEventListener("click", e => { if (e.target.dataset.v){ stars = +e.target.dataset.v; paint(stars); } });
+
+const starText = n => "★".repeat(n) + "☆".repeat(5 - n);
+
+async function loadReviews(){
+  try{
+    const q = query(collection(db, "reviews"), orderBy("createdAt", "desc"), limit(100));
+    const snap = await getDocs(q);
+    const list = $("rvList"); list.textContent = "";
+    let total = 0, n = 0;
+    snap.forEach(d => {
+      const r = d.data();
+      if (r.app !== APP_ID) return;
+      n++; total += r.rating;
+      const box = document.createElement("div"); box.className = "rv-item";
+      const top = document.createElement("div");
+      const st = document.createElement("span"); st.className = "stars"; st.textContent = starText(r.rating);
+      const who = document.createElement("span"); who.className = "who"; who.textContent = " " + r.name;
+      const when = document.createElement("span"); when.className = "when";
+      when.textContent = r.createdAt ? r.createdAt.toDate().toLocaleDateString() : "";
+      top.append(st, who, when);
+      const p = document.createElement("p"); p.textContent = r.text;
+      box.append(top, p); list.append(box);
+    });
+    if (!n){ list.innerHTML = "<p>No reviews yet. Be the first!</p>"; return; }
+    $("avgStars").textContent = starText(Math.round(total / n));
+    $("avgText").textContent = (total / n).toFixed(1) + " (" + n + " review" + (n > 1 ? "s" : "") + ")";
+  }catch(e){ $("rvList").innerHTML = "<p>Could not load reviews.</p>"; }
+}
+loadReviews();
+
+$("rvSend").addEventListener("click", async () => {
+  const name = $("rvName").value.trim(), text = $("rvText").value.trim(), msg = $("rvMsg");
+  if (!stars){ msg.textContent = "Please tap the stars first."; return; }
+  if (!name){ msg.textContent = "Please write your name."; return; }
+  if (text.length < 3){ msg.textContent = "Please write a short comment."; return; }
+  if (Date.now() - (+localStorage.getItem("kb_last") || 0) < 60000){ msg.textContent = "Please wait a minute before sending again."; return; }
+  $("rvSend").disabled = true; msg.textContent = "Sending...";
+  try{
+    await addDoc(collection(db, "reviews"), { app: APP_ID, rating: stars, name, text, createdAt: serverTimestamp() });
+    localStorage.setItem("kb_last", Date.now());
+    $("rvText").value = ""; stars = 0; paint(0);
+    msg.textContent = "Thank you! Your review is added.";
+    loadReviews();
+  }catch(e){ msg.textContent = "Could not send. Try again."; }
+  $("rvSend").disabled = false;
+});
+</script>
+</body></html>
