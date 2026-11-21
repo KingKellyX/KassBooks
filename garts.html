@@ -18,9 +18,9 @@
 <main>
 <div class="hero" style="padding:48px 0 56px"><div class="wrap">
 <a class="crumb" href="apps.html">‹ All apps</a>
-<div style="display:flex;gap:18px;align-items:center;margin-bottom:18px"><span class="ico" style="background:var(--gold);color:var(--deep);width:72px;height:72px;font-size:1.6rem">Sc</span><h1 style="font-size:clamp(2rem,6vw,3.2rem)">Science Books</h1></div>
+<div style="display:flex;gap:18px;align-items:center;margin-bottom:18px"><span class="ico" style="background:var(--gold);color:var(--deep);width:72px;height:72px;font-size:1.6rem">GA</span><h1 style="font-size:clamp(2rem,6vw,3.2rem)">Science Books</h1></div>
 <p style="margin-top:0">Read your General Arts class books on your tablet. Free for KASS students.</p>
-<a class="btn" id="dlBtn" href="https://www.dropbox.com/scl/fi/a20f4yxisqvx6rp9qbqi0/Science-Books_1.0.apk?rlkey=24fc3nnzv0fg36hikmvat6781&st=l57knaps&dl=1" download>Download for Android</a>
+<a class="btn" id="dlBtn" href="https://www.dropbox.com/scl/fi/yq5t89xauib1yxwy53xzj/G-Arts-Books_1.0.apk?rlkey=0qdy1ghstkje8xmln5mr3lf49&st=qi2xy4sn&dl=1" download>Download for Android</a>
 <div class="facts" style="color:#cbbce6;margin:18px 0 0"><span><b style="color:#fff">Version</b> 1.5</span><span><b style="color:#fff">Works on</b> Android tablets</span></div>
 <div class="stat-row"><span><b id="dlCount">60</b> downloads</span><span><b id="avgStars" class="stars" style="color:#e0a800">–</b> <span id="avgText">No reviews yet</span></span></div>
 </div></div>
@@ -72,8 +72,8 @@ const firebaseConfig = {
 };
 const db = getFirestore(initializeApp(firebaseConfig));
 
-const APP_ID = "science";
-const START_COUNT = 60; // downloads you already had before this counter
+const APP_ID = "garts";
+const START_COUNT = 8; // downloads you already had before this counter
 
 const $ = id => document.getElementById(id);
 const statsRef = doc(db, "stats", APP_ID);
